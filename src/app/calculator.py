@@ -11,4 +11,4 @@ def exponent(first, second):
     return first ** second
 
 def divide(first, second):
-    pass
+    return first / second
