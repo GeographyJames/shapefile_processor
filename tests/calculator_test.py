@@ -1,4 +1,4 @@
-import calculator
+from src.app import calculator
 
 
 class TestCalculator:
