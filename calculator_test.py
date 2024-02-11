@@ -9,4 +9,4 @@ class TestCalculator:
         assert calculator.subtract(2, 1) == 1
 
     def test_should_perform_multiplication():
-        pass
+        assert calculator.multiply(4, 4) == 16
