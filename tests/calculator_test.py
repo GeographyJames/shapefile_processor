@@ -12,4 +12,7 @@ class TestCalculator:
         assert calculator.multiply(4, 4) == 16
 
     def test_should_perform_exponential_operation(self):
-        assert calculator.exponent(3, 2) == 9  
+        assert calculator.exponent(3, 2) == 9
+
+    def test_should_perform_division(self):
+        assert calculator.divide(8, 2) == 4

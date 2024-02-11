@@ -9,3 +9,6 @@ def multiply(first, second):
 
 def exponent(first, second):
     return first ** second
+
+def divide(first, second):
+    return first / second
