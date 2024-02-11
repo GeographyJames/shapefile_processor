@@ -8,4 +8,4 @@ def multiply(first, second):
     return first * second
 
 def exponent(first, second):
-    pass
+    return first ** second
