@@ -8,5 +8,5 @@ class TestCalculator:
     def test_should_perform_subtraction(self):
         assert calculator.subtract(2, 1) == 1
 
-    def test_should_perform_multiplication():
-        pass
+    def test_should_perform_multiplication(self):
+        assert calculator.multiply(4, 4) == 16
