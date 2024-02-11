@@ -6,3 +6,6 @@ def subtract(first, second):
 
 def multiply(first, second):
     return first * second
+
+def exponent(first, second):
+    return first ** second
