@@ -1,5 +1,5 @@
 import src.app.calculator as calculator
-# from osgeo import ogr
+from osgeo import ogr
 
 
 if __name__ == "__main__":

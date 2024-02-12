@@ -49,3 +49,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+
+    - name: Run Application
+      run:
+        python main.py
