@@ -22,12 +22,12 @@ jobs:
     - name: Install GDAL
     
       run: |
-        sudo apt-get-repository ppa:ubuntugis/ppa
-        sudo apt-get update repository
-        sudo apt-get install gdal-bin
+        sudo apt-add-repository ppa:ubuntugis/ppa
+        sudo apt-get update
+        sudo apt-get install gdal-bin, libgdal-dev
 
         echo "GDAL version installed: "
-        ogrinfo --version
+        echo $(ogrinfo --version)
 
 
     - name: Install dependencies
