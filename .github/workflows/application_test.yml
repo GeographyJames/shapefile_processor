@@ -23,7 +23,7 @@ jobs:
     
       run: |
         sudo apt-add-repository ppa:ubuntugis/ppa
-        sudo apt-get update repository
+        sudo apt-get update
         sudo apt-get install gdal-bin
 
         echo "GDAL version installed: "
