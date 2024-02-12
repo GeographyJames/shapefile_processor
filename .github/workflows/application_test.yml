@@ -22,12 +22,12 @@ jobs:
     - name: Install GDAL
     
       run: |
-        sudo apt-get-repository ppa:ubuntugis/ppa
+        sudo apt-add-repository ppa:ubuntugis/ppa
         sudo apt-get update repository
-        sudo apt-get install gdal-bin
-
+        sudo apt-get install gdal-bin, libgdal-dev
         echo "GDAL version installed: "
-        echo ogrinfo --version
+        ogrinfo --version
+
 
     - name: Install dependencies
       run: |
@@ -36,7 +36,12 @@ jobs:
 
 
         pip install flake8 pytest
+        pip install GDAL=='gdal-config- --version'
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+
+
+        
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
