@@ -26,6 +26,8 @@ jobs:
         sudo apt-get update
         sudo apt-get install gdal-bin libgdal-dev
         echo "GDAL version installed: $(ogrinfo --version)"
+    - name: Install libgl1 for Qt
+      run: sudo apt-get install libgl1-mesa-glx 
 
     - name: Install dependencies
       run: |
