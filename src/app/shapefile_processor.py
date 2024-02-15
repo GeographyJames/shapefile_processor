@@ -26,6 +26,9 @@ def to_shapely_multipolygon(shapes: list[Polygon | Point | LineString]) -> shape
     if isinstance(shapes[0], LineString):
         return MultiLineString(shapes)
 
+def geom_type(path: Path):
+    with fiona.open(path) as f: 
+        return f.schema["geometry"]
 
 if __name__ == "__main__":
     path = Path("tests/test_data/1_valid_polygon_OSGB36.shp")
@@ -33,3 +36,4 @@ if __name__ == "__main__":
     print(crs(path))
     print(to_shapely(path))
     print(to_shapely_multipolygon(to_shapely(path)))
+    print(type(geom_type(path)))
