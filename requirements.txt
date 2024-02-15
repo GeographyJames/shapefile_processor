@@ -24,6 +24,7 @@ PyQt5-Qt5==5.15.2
 PyQt5-sip==12.13.0
 pytest==8.0.0
 pytest-cov==4.1.0
+shapely==2.0.2
 shiboken2==5.15.2.1
 six==1.16.0
 tomli==2.0.1
